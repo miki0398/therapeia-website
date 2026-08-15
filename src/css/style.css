@@ -233,11 +233,15 @@ a:hover {
     align-items: center;
 }
 
-.brain-icon {
+..brain-icon {
     width: 100%;
-    max-width: 300px;
+    max-width: 500px;
     height: auto;
     animation: float 6s ease-in-out infinite;
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 16px rgba(26, 92, 107, 0.15);
 }
 
 @keyframes float {
