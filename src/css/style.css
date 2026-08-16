@@ -153,11 +153,12 @@ a:hover {
 .hero {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    align-items: center;
+    align-items: flex-start;
     gap: 4rem;
-    padding: 6rem 2rem 10rem 2rem;
+    padding: 6rem 2rem;
     max-width: 1200px;
     margin: 0 auto;
+    margin-bottom: 8rem;
 }
 
 .hero-content {
@@ -254,16 +255,8 @@ section {
     font-size: 2.5rem;
     text-align: center;
     margin-bottom: 3rem;
-    position: fixed;
+    position: relative;
     padding-bottom: 1rem;
-    top: 100px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 10;
-    background-color: white;
-    width: 100%;
-    padding: 1rem 2rem;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 .section-title::after {
