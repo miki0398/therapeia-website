@@ -243,22 +243,11 @@ a:hover {
 
 .brain-icon {
     width: 100%;
-    max-width: 500px;
-    height: auto;
+    max-width: 400px;
+    height: 400px;
+    object-fit: contain;
     animation: float 6s ease-in-out infinite;
-    background-color: white;
-    border-radius: 12px;
-    padding: 20px;
-    box-shadow: 0 4px 16px rgba(26, 92, 107, 0.15);
-}
-
-@keyframes float {
-    0%, 100% {
-        transform: translateY(0px);
-    }
-    50% {
-        transform: translateY(-20px);
-    }
+    pointer-events: none;
 }
 
 /* ========================================
@@ -321,9 +310,21 @@ section {
 
 .key-points {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
     margin-top: 3rem;
+}
+
+@media (max-width: 1024px) {
+    .key-points {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .key-points {
+        grid-template-columns: 1fr;
+    }
 }
 
 .key-point {
