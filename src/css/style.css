@@ -155,28 +155,29 @@ a:hover {
     grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: 3rem;
-    padding: 5rem 2rem 3rem;   /* reduced bottom padding */
+    padding: 5rem 2rem;          /* same padding style as other sections */
     max-width: 1200px;
     margin: 0 auto;
-    overflow: hidden;          /* safety net */
+    /* NO big margin-bottom */
 }
 
 .hero-content {
-    position: relative;
-    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .hero-title {
-    font-size: 3rem;
+    font-size: 2.8rem;
     line-height: 1.2;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.2rem;
     color: var(--primary-teal);
 }
 
 .hero-subtitle {
-    font-size: 1.5rem;
+    font-size: 1.35rem;
     color: var(--secondary-gold);
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.2rem;
     font-weight: 600;
 }
 
@@ -184,7 +185,7 @@ a:hover {
     font-size: 1.05rem;
     color: var(--text-dark);
     margin-bottom: 2rem;
-    line-height: 1.8;
+    line-height: 1.7;
 }
 
 .hero-cta {
@@ -231,14 +232,11 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
-    max-height: 420px;         /* hard limit */
 }
 
 .brain-icon {
     width: 100%;
     max-width: 420px;
-    max-height: 400px;
     height: auto;
     object-fit: contain;
     display: block;
@@ -293,8 +291,6 @@ section {
 
 #about {
     background-color: var(--bg-light);
-    padding-top: 4rem;
-    margin-top: 0;
 }
 
 .about-content {
@@ -326,6 +322,20 @@ section {
 @media (max-width: 768px) {
     .key-points {
         grid-template-columns: 1fr;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 3rem 2rem;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.2rem;
     }
 }
 
