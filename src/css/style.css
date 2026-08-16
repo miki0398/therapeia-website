@@ -158,7 +158,9 @@ a:hover {
     padding: 6rem 2rem;
     max-width: 1200px;
     margin: 0 auto;
-    min-height: 600px;
+    min-height: auto;
+    position: relative;
+    z-index: 1;
 }
 
 .hero-content {
@@ -232,22 +234,15 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 400px;
+    min-height: auto;
+    position: relative;
+    z-index: 1;
 }
 
 @media (max-width: 768px) {
     .hero-visual {
         min-height: 300px;
     }
-}
-
-.brain-icon {
-    width: 100%;
-    max-width: 400px;
-    height: 400px;
-    object-fit: contain;
-    animation: float 6s ease-in-out infinite;
-    pointer-events: none;
 }
 
 /* ========================================
