@@ -104,14 +104,6 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(card);
     });
 
-    // Parallax effect for hero section (subtle)
-    const hero = document.querySelector('.hero');
-    if (hero && window.innerWidth > 768) {
-        window.addEventListener('scroll', function() {
-            const scrollPos = window.scrollY;
-            hero.style.transform = `translateY(${scrollPos * 0.5}px)`;
-        });
-    }
 });
 
 // Form submission with email service (example for future integration)
