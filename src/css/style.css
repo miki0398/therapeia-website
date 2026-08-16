@@ -162,9 +162,8 @@ a:hover {
 }
 
 .hero-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    position: relative;
+    z-index: 2;
 }
 
 .hero-title {
