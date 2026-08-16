@@ -241,7 +241,7 @@ a:hover {
     }
 }
 
-..brain-icon {
+.brain-icon {
     width: 100%;
     max-width: 500px;
     height: auto;
